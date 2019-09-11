@@ -22,6 +22,11 @@ public class MediaController {
     public Iterable<Media> getMedia() {
         return mediaService.getAllMedia();
     }
+    
+    @GetMapping("/medias")
+    public Iterable<Media> getMedias() {
+        return mediaService.getAllMedia();
+    }
 
     @GetMapping("/media/{id}")
     public Media getMediaById(@PathVariable int id) {
